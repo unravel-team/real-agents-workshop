@@ -1,7 +1,15 @@
 [project]
 name = "real-agents-workshop"
 version = "0.1.0"
-description = "Add your description here"
+description = "Build & Optimise AI Agents That Survive Production"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.11"
+dependencies = [
+    "dspy-ai",
+    "openai",
+    "langfuse",
+    "notebook",
+    "ipykernel",
+    "python-dotenv",
+    "pytest"
+]
