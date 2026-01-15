@@ -20,12 +20,17 @@ You’ll leave with a concrete engineering workflow (an “agent improvement loo
 
 ## Target Audience
 
+- **Best suited for:**
+    - Software engineers / platform engineers building AI features using LLMs
+    - SDETs / QA engineers working on evals and reliability
+    - Engineering managers and tech leads who plan to teach scalable agent building and better project planning
 - **Level:** Intermediate
 - **Prerequisites:**
     - Comfortable with Python (APIs, functions, virtualenv/uv)
     - Basic familiarity with LLMs (prompts, tool calling concepts)
     - Laptop + internet access
     - (Recommended) An API key for any supported LLM provider (OpenAI/Anthropic/etc.)
+    - Langfuse (for observability) - [Cloud setup](https://langfuse.com/docs/get-started) or [Local Docker setup](https://langfuse.com/docs/deployment/local)
 
 ## Workshop Outline (3 hours)
 
@@ -44,9 +49,8 @@ You’ll leave with a concrete engineering workflow (an “agent improvement loo
 5.  **[Shipping the improvement loop](./05-shipping/) (15 min)**
     Minimal CI pattern: run evals on PR, regressions gate merges, version prompts/programs.
 
-## Setup
+## Repo Setup
 
 - Python **3.11+**
 - [`uv`](https://docs.astral.sh/uv/)
 - Git
-- Docker (optional, for localized setup)
