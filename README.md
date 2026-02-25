@@ -54,3 +54,19 @@ You’ll leave with a concrete engineering workflow (an “agent improvement loo
 - Python **3.11+**
 - [`uv`](https://docs.astral.sh/uv/)
 - Git
+
+### Validate Your Setup
+
+After cloning, verify all prerequisites with a single command:
+
+**macOS / Linux:**
+```bash
+bash validate.sh
+```
+
+**Windows:**
+```cmd
+validate.bat
+```
+
+This checks for Git, Python 3.11+, uv, DuckDB, required API keys, and then installs dependencies via `uv sync`.
