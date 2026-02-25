@@ -29,7 +29,7 @@ LLM_KEY_NAMES = [
 LANGFUSE_KEY_NAMES = [
     "LANGFUSE_PUBLIC_KEY",
     "LANGFUSE_SECRET_KEY",
-    "LANGFUSE_HOST",
+    ("LANGFUSE_HOST", "LANGFUSE_BASE_URL"),  # either is accepted
 ]
 
 # ---------------------------------------------------------------------------
@@ -230,13 +230,18 @@ def check_llm_keys(env: dict[str, str], dotenv_keys: set[str]) -> CheckResult:
 def check_langfuse_keys(env: dict[str, str], dotenv_keys: set[str]) -> CheckResult:
     present = []
     missing = []
-    for key in LANGFUSE_KEY_NAMES:
-        val = env.get(key, "").strip()
-        if val:
-            source = "via .env" if key in dotenv_keys else "via environment"
-            present.append((key, source))
-        else:
-            missing.append(key)
+    for entry in LANGFUSE_KEY_NAMES:
+        alternatives = (entry,) if isinstance(entry, str) else entry
+        found = False
+        for key in alternatives:
+            val = env.get(key, "").strip()
+            if val:
+                source = "via .env" if key in dotenv_keys else "via environment"
+                present.append((key, source))
+                found = True
+                break
+        if not found:
+            missing.append(" or ".join(alternatives))
 
     if not missing:
         sources = ", ".join(f"{k} ({s})" for k, s in present)
