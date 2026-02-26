@@ -3,6 +3,8 @@ from typing import Literal
 
 import dspy
 from dotenv import load_dotenv
+from langfuse import get_client
+from openinference.instrumentation.dspy import DSPyInstrumentor
 
 load_dotenv()
 
@@ -63,3 +65,30 @@ def initialize_dspy(model_type: ModelType = "small_model"):
         "No API key found. Set one of: "
         + ", ".join(PROVIDER_CONFIG.keys())
     )
+
+
+LANGFUSE_REQUIRED_KEYS = ["LANGFUSE_PUBLIC_KEY", "LANGFUSE_SECRET_KEY", "LANGFUSE_BASE_URL"]
+
+
+def initialize_langfuse():
+    missing = [k for k in LANGFUSE_REQUIRED_KEYS if not os.getenv(k)]
+    if missing:
+        print(f"Langfuse not configured. Missing env vars: {', '.join(missing)}")
+        return
+
+    try:
+        langfuse = get_client()
+        if langfuse.auth_check():
+            print("Langfuse client is authenticated and ready!")
+        else:
+            print("Langfuse authentication failed. Please check your credentials and host.")
+            return
+    except Exception as e:
+        print(f"Langfuse initialization failed: {e}")
+        return
+
+    try:
+        DSPyInstrumentor().instrument()
+        print("DSPy instrumentation enabled.")
+    except Exception as e:
+        print(f"DSPy instrumentation failed: {e}")
