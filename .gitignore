@@ -10,3 +10,6 @@
 # Python-generated files
 __pycache__/
 *.egg-info
+
+# Trajectory files
+02-build-and-optimize/trajectories/*.md
