@@ -1,16 +1,19 @@
 # Module 1: Anatomy of a Production Agent
 
-**Goal**: Move beyond "magical" one-shot prompts to a robust agentic loop.
+**Goal**: Understand the building blocks of an AI agent using DSPy — from simple LLM calls to tool-using agents.
 
-In this module, we will deconstruct the agent into:
-1.  **The Loop**: `Goal -> Plan -> Act -> Observe -> Repeat`
-2.  **Tool Contracts**: How to define reliable interfaces for the agent.
-3.  **Stop Conditions**: Knowing when to give up or declare success.
+In this module, we will progressively build up agent capabilities:
+
+1. **Signatures**: Declarative input/output specs that tell the LM *what* to do, not *how*.
+2. **Modules (Predict)**: The base predictor module that interacts with the LLM for a given task.
+3. **Chain of Thought**: Prompting the LLM to reason step-by-step before answering.
+4. **ReAct**: A tool-using agent that combines reasoning with function calls.
 
 ## Exercises
 
-Open `notebook.ipynb` to follow along.
+Open `intro.ipynb` to follow along.
 
-1.  **The Naive Loop**: We'll write a simple Python `while` loop that calls an LLM.
-2.  **Breaking It**: We'll introduce "real world" noise to see where it breaks.
-3.  **Structured Output**: We'll switch from text generation to structured tool calls.
+1. **Signatures** — Define inline (`"question -> answer"`) and class-based signatures for structured tasks like sentiment classification.
+2. **Order Issue Triager** — Build an agent that triages food delivery order issues into categories: `no_issue`, `late_order`, `severely_late_order`, `fulfillment_issue`, `consumer_issue`.
+3. **Chain of Thought** — Upgrade the triager with step-by-step reasoning for better accuracy on edge cases.
+4. **ReAct with Tools** — Give the agent a `normalize_delivery_time` tool to compute delivery delays before classifying.
