@@ -1,2 +1,5 @@
 # Environment secrets
 .env
+
+# Downloaded data
+data/

@@ -70,3 +70,11 @@ validate.bat
 ```
 
 This checks for Git, Python 3.11+, uv, DuckDB, required API keys, and then installs dependencies via `uv sync`.
+
+### Download Data
+
+Once setup is validated, download the workshop dataset:
+
+```bash
+uv run download_data.py
+```
