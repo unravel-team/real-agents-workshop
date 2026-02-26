@@ -156,8 +156,7 @@ def save_trajectory(
             lines.append("")
 
     # Write file
-    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{ts}_{name}.md"
+    filename = f"{name}.md"
     filepath = output_dir / filename
     filepath.write_text("\n".join(lines))
 

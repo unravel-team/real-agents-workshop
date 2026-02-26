@@ -316,7 +316,7 @@ def save_eval(
     conn,
     difficulty: str = "medium",
     expected_tables: list[str] | None = None,
-    base_dir: str | Path = ".",
+    base_dir: str | Path = Path(__file__).resolve().parent.parent / "data",
 ) -> dict:
     """Save a new eval example: run SQL, write CSV + SQL files, return dataset entry.
 
