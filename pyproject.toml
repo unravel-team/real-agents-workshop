@@ -11,5 +11,7 @@ dependencies = [
     "notebook",
     "ipykernel",
     "python-dotenv",
-    "pytest"
+    "pytest",
+    "duckdb",
+    "pandas>=3.0.1",
 ]
