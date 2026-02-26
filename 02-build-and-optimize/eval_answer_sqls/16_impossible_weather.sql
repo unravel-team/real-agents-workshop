@@ -1,0 +1,2 @@
+-- IMPOSSIBLE: No weather data exists in this database.
+-- The agent should recognise this and explain that the question cannot be answered.

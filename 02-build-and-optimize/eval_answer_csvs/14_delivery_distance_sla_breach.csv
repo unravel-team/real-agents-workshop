@@ -1,0 +1,80 @@
+store_name,distance_bucket,delivered_orders,avg_delivery_mins,avg_committed_mins,avg_delay_mins,sla_breach_pct
+Aundh Hub,0-1 km,10871,10.8,11.4,-0.6,16.1
+Aundh Hub,1-2 km,32582,12.4,13.1,-0.7,16.51
+Aundh Hub,2-3 km,54181,14.3,15.1,-0.8,16.73
+Aundh Hub,3-4 km,76514,16.1,17.0,-0.9,16.51
+Aundh Hub,4+ km,615,17.2,18.0,-0.8,16.75
+Baner Hub,0-1 km,8279,10.8,11.4,-0.6,16.98
+Baner Hub,1-2 km,25288,12.4,13.1,-0.7,16.68
+Baner Hub,2-3 km,44402,14.3,15.0,-0.8,16.64
+Baner Hub,3-4 km,62281,16.1,17.0,-0.9,16.77
+Baner Hub,4+ km,359,17.2,18.0,-0.8,18.66
+Chinchwad Hub,0-1 km,4318,10.7,11.4,-0.6,17.16
+Chinchwad Hub,1-2 km,14164,12.4,13.1,-0.7,16.4
+Chinchwad Hub,2-3 km,22787,14.2,15.0,-0.8,15.97
+Chinchwad Hub,3-4 km,31611,16.1,17.0,-0.9,16.38
+Chinchwad Hub,4+ km,40950,18.0,19.0,-1.0,16.84
+Deccan Hub,0-1 km,13246,10.7,11.3,-0.6,16.47
+Deccan Hub,1-2 km,42327,12.4,13.1,-0.7,16.89
+Deccan Hub,2-3 km,69704,14.3,15.1,-0.8,16.59
+Deccan Hub,3-4 km,310,15.1,16.0,-0.9,17.74
+Hadapsar Hub,0-1 km,5854,10.7,11.3,-0.6,15.73
+Hadapsar Hub,1-2 km,17560,12.4,13.1,-0.7,16.76
+Hadapsar Hub,2-3 km,30764,14.3,15.0,-0.8,16.61
+Hadapsar Hub,3-4 km,43542,16.1,17.0,-0.9,16.49
+Hadapsar Hub,4+ km,55474,18.0,19.0,-1.0,16.53
+Hinjewadi Hub,0-1 km,5879,10.8,11.4,-0.6,16.55
+Hinjewadi Hub,1-2 km,19421,12.4,13.1,-0.7,16.56
+Hinjewadi Hub,2-3 km,30448,14.3,15.1,-0.8,16.54
+Hinjewadi Hub,3-4 km,44119,16.1,17.0,-0.9,16.39
+Hinjewadi Hub,4+ km,57054,18.0,19.0,-1.0,16.62
+Kharadi Hub,0-1 km,5648,10.7,11.3,-0.6,16.34
+Kharadi Hub,1-2 km,16074,12.4,13.1,-0.7,16.16
+Kharadi Hub,2-3 km,28559,14.3,15.1,-0.8,16.31
+Kharadi Hub,3-4 km,38182,16.1,17.0,-0.9,16.79
+Kharadi Hub,4+ km,25290,17.5,18.5,-1.0,16.51
+Kondhwa Hub,0-1 km,11700,10.7,11.4,-0.6,16.77
+Kondhwa Hub,1-2 km,35415,12.4,13.1,-0.7,16.4
+Kondhwa Hub,2-3 km,57277,14.2,15.0,-0.8,16.56
+Kondhwa Hub,3-4 km,38249,15.6,16.5,-0.9,16.49
+Koregaon Park Hub,0-1 km,10487,10.7,11.3,-0.6,16.13
+Koregaon Park Hub,1-2 km,31952,12.4,13.1,-0.7,16.39
+Koregaon Park Hub,2-3 km,52207,14.2,15.0,-0.8,16.39
+Koregaon Park Hub,3-4 km,74142,16.1,17.0,-0.9,16.6
+Koregaon Park Hub,4+ km,473,17.2,18.0,-0.8,18.82
+Kothrud Hub,0-1 km,11578,10.7,11.3,-0.6,16.31
+Kothrud Hub,1-2 km,34988,12.4,13.1,-0.7,16.56
+Kothrud Hub,2-3 km,58311,14.3,15.1,-0.8,16.5
+Kothrud Hub,3-4 km,35857,15.6,16.5,-0.9,16.67
+Magarpatta Hub,0-1 km,9281,10.8,11.4,-0.6,16.75
+Magarpatta Hub,1-2 km,27988,12.4,13.1,-0.7,16.74
+Magarpatta Hub,2-3 km,47833,14.3,15.1,-0.8,16.41
+Magarpatta Hub,3-4 km,69226,16.1,17.0,-0.9,16.48
+Magarpatta Hub,4+ km,614,17.1,18.0,-0.9,18.4
+Pimpri Hub,0-1 km,5503,10.7,11.3,-0.6,17.1
+Pimpri Hub,1-2 km,15287,12.4,13.1,-0.7,16.75
+Pimpri Hub,2-3 km,24592,14.2,15.0,-0.8,16.58
+Pimpri Hub,3-4 km,36151,16.1,17.0,-0.9,16.74
+Pimpri Hub,4+ km,46175,18.0,19.0,-1.0,16.49
+Shivajinagar Hub,0-1 km,16012,10.7,11.3,-0.6,16.75
+Shivajinagar Hub,1-2 km,46513,12.4,13.1,-0.7,16.49
+Shivajinagar Hub,2-3 km,78515,14.3,15.1,-0.8,16.6
+Shivajinagar Hub,3-4 km,465,15.2,16.0,-0.8,17.2
+Undri Hub,0-1 km,6535,10.8,11.3,-0.6,17.23
+Undri Hub,1-2 km,18624,12.4,13.1,-0.7,16.81
+Undri Hub,2-3 km,32218,14.2,15.0,-0.8,16.55
+Undri Hub,3-4 km,43794,16.1,17.0,-0.9,16.61
+Undri Hub,4+ km,315,17.1,18.0,-0.9,16.51
+Viman Nagar Hub,0-1 km,8564,10.7,11.3,-0.6,16.18
+Viman Nagar Hub,1-2 km,27149,12.4,13.1,-0.7,16.38
+Viman Nagar Hub,2-3 km,45966,14.3,15.1,-0.8,16.38
+Viman Nagar Hub,3-4 km,62261,16.1,17.0,-0.9,16.42
+Viman Nagar Hub,4+ km,38350,17.6,18.5,-1.0,16.82
+Wakad Hub,0-1 km,9389,10.7,11.3,-0.6,15.62
+Wakad Hub,1-2 km,26974,12.4,13.1,-0.7,16.79
+Wakad Hub,2-3 km,45245,14.3,15.1,-0.8,16.47
+Wakad Hub,3-4 km,28978,15.6,16.5,-0.9,16.72
+Warje Hub,0-1 km,10707,10.7,11.3,-0.6,16.9
+Warje Hub,1-2 km,30429,12.4,13.1,-0.7,16.62
+Warje Hub,2-3 km,51952,14.3,15.1,-0.8,16.42
+Warje Hub,3-4 km,33907,15.6,16.5,-0.9,16.6

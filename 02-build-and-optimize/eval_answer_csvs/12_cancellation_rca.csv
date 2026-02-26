@@ -1,0 +1,205 @@
+store_name,cancel_reason,time_slot,cancelled_orders,pct_of_store_cancellations
+Aundh Hub,no_rider_available,Evening (5-10),564,15.89
+Aundh Hub,consumer_unavailable,Evening (5-10),519,14.62
+Aundh Hub,no_rider_available,Morning (6-12),469,13.21
+Aundh Hub,consumer_unavailable,Morning (6-12),410,11.55
+Aundh Hub,out_of_stock,Evening (5-10),377,10.62
+Aundh Hub,out_of_stock,Morning (6-12),301,8.48
+Aundh Hub,no_rider_available,Afternoon (12-5),282,7.95
+Aundh Hub,consumer_unavailable,Afternoon (12-5),242,6.82
+Aundh Hub,out_of_stock,Afternoon (12-5),161,4.54
+Aundh Hub,no_rider_available,Night (10-6),90,2.54
+Aundh Hub,consumer_unavailable,Night (10-6),74,2.09
+Aundh Hub,out_of_stock,Night (10-6),60,1.69
+Baner Hub,no_rider_available,Evening (5-10),448,15.44
+Baner Hub,no_rider_available,Morning (6-12),425,14.65
+Baner Hub,consumer_unavailable,Evening (5-10),417,14.37
+Baner Hub,consumer_unavailable,Morning (6-12),328,11.31
+Baner Hub,out_of_stock,Evening (5-10),316,10.89
+Baner Hub,no_rider_available,Afternoon (12-5),247,8.51
+Baner Hub,out_of_stock,Morning (6-12),238,8.2
+Baner Hub,consumer_unavailable,Afternoon (12-5),196,6.76
+Baner Hub,out_of_stock,Afternoon (12-5),121,4.17
+Baner Hub,consumer_unavailable,Night (10-6),61,2.1
+Baner Hub,no_rider_available,Night (10-6),58,2.0
+Baner Hub,out_of_stock,Night (10-6),46,1.59
+Chinchwad Hub,no_rider_available,Evening (5-10),341,15.23
+Chinchwad Hub,consumer_unavailable,Evening (5-10),310,13.85
+Chinchwad Hub,no_rider_available,Morning (6-12),310,13.85
+Chinchwad Hub,consumer_unavailable,Morning (6-12),298,13.31
+Chinchwad Hub,out_of_stock,Evening (5-10),224,10.0
+Chinchwad Hub,out_of_stock,Morning (6-12),187,8.35
+Chinchwad Hub,no_rider_available,Afternoon (12-5),176,7.86
+Chinchwad Hub,consumer_unavailable,Afternoon (12-5),149,6.65
+Chinchwad Hub,out_of_stock,Afternoon (12-5),104,4.64
+Chinchwad Hub,consumer_unavailable,Night (10-6),57,2.55
+Chinchwad Hub,no_rider_available,Night (10-6),49,2.19
+Chinchwad Hub,out_of_stock,Night (10-6),34,1.52
+Deccan Hub,no_rider_available,Evening (5-10),395,15.25
+Deccan Hub,consumer_unavailable,Evening (5-10),376,14.51
+Deccan Hub,no_rider_available,Morning (6-12),335,12.93
+Deccan Hub,consumer_unavailable,Morning (6-12),305,11.77
+Deccan Hub,out_of_stock,Morning (6-12),245,9.46
+Deccan Hub,out_of_stock,Evening (5-10),244,9.42
+Deccan Hub,no_rider_available,Afternoon (12-5),222,8.57
+Deccan Hub,consumer_unavailable,Afternoon (12-5),182,7.02
+Deccan Hub,out_of_stock,Afternoon (12-5),137,5.29
+Deccan Hub,no_rider_available,Night (10-6),54,2.08
+Deccan Hub,consumer_unavailable,Night (10-6),52,2.01
+Deccan Hub,out_of_stock,Night (10-6),44,1.7
+Hadapsar Hub,no_rider_available,Evening (5-10),511,16.32
+Hadapsar Hub,no_rider_available,Morning (6-12),442,14.11
+Hadapsar Hub,consumer_unavailable,Evening (5-10),425,13.57
+Hadapsar Hub,consumer_unavailable,Morning (6-12),377,12.04
+Hadapsar Hub,out_of_stock,Evening (5-10),303,9.67
+Hadapsar Hub,out_of_stock,Morning (6-12),264,8.43
+Hadapsar Hub,no_rider_available,Afternoon (12-5),241,7.69
+Hadapsar Hub,consumer_unavailable,Afternoon (12-5),228,7.28
+Hadapsar Hub,out_of_stock,Afternoon (12-5),149,4.76
+Hadapsar Hub,no_rider_available,Night (10-6),79,2.52
+Hadapsar Hub,consumer_unavailable,Night (10-6),63,2.01
+Hadapsar Hub,out_of_stock,Night (10-6),50,1.6
+Hinjewadi Hub,no_rider_available,Evening (5-10),475,14.79
+Hinjewadi Hub,no_rider_available,Morning (6-12),469,14.6
+Hinjewadi Hub,consumer_unavailable,Evening (5-10),457,14.23
+Hinjewadi Hub,consumer_unavailable,Morning (6-12),397,12.36
+Hinjewadi Hub,out_of_stock,Evening (5-10),337,10.49
+Hinjewadi Hub,out_of_stock,Morning (6-12),267,8.31
+Hinjewadi Hub,no_rider_available,Afternoon (12-5),264,8.22
+Hinjewadi Hub,consumer_unavailable,Afternoon (12-5),223,6.94
+Hinjewadi Hub,out_of_stock,Afternoon (12-5),142,4.42
+Hinjewadi Hub,no_rider_available,Night (10-6),72,2.24
+Hinjewadi Hub,consumer_unavailable,Night (10-6),66,2.05
+Hinjewadi Hub,out_of_stock,Night (10-6),43,1.34
+Kharadi Hub,no_rider_available,Evening (5-10),362,16.12
+Kharadi Hub,consumer_unavailable,Evening (5-10),331,14.74
+Kharadi Hub,no_rider_available,Morning (6-12),314,13.99
+Kharadi Hub,consumer_unavailable,Morning (6-12),271,12.07
+Kharadi Hub,out_of_stock,Evening (5-10),233,10.38
+Kharadi Hub,out_of_stock,Morning (6-12),184,8.2
+Kharadi Hub,consumer_unavailable,Afternoon (12-5),175,7.8
+Kharadi Hub,no_rider_available,Afternoon (12-5),150,6.68
+Kharadi Hub,out_of_stock,Afternoon (12-5),103,4.59
+Kharadi Hub,no_rider_available,Night (10-6),48,2.14
+Kharadi Hub,out_of_stock,Night (10-6),37,1.65
+Kharadi Hub,consumer_unavailable,Night (10-6),37,1.65
+Kondhwa Hub,no_rider_available,Evening (5-10),480,16.88
+Kondhwa Hub,consumer_unavailable,Evening (5-10),415,14.59
+Kondhwa Hub,no_rider_available,Morning (6-12),371,13.05
+Kondhwa Hub,consumer_unavailable,Morning (6-12),369,12.97
+Kondhwa Hub,out_of_stock,Evening (5-10),266,9.35
+Kondhwa Hub,out_of_stock,Morning (6-12),255,8.97
+Kondhwa Hub,no_rider_available,Afternoon (12-5),211,7.42
+Kondhwa Hub,consumer_unavailable,Afternoon (12-5),186,6.54
+Kondhwa Hub,out_of_stock,Afternoon (12-5),156,5.49
+Kondhwa Hub,consumer_unavailable,Night (10-6),55,1.93
+Kondhwa Hub,no_rider_available,Night (10-6),49,1.72
+Kondhwa Hub,out_of_stock,Night (10-6),31,1.09
+Koregaon Park Hub,no_rider_available,Evening (5-10),532,15.15
+Koregaon Park Hub,consumer_unavailable,Evening (5-10),513,14.61
+Koregaon Park Hub,no_rider_available,Morning (6-12),504,14.35
+Koregaon Park Hub,consumer_unavailable,Morning (6-12),403,11.48
+Koregaon Park Hub,out_of_stock,Evening (5-10),352,10.03
+Koregaon Park Hub,out_of_stock,Morning (6-12),312,8.89
+Koregaon Park Hub,no_rider_available,Afternoon (12-5),286,8.15
+Koregaon Park Hub,consumer_unavailable,Afternoon (12-5),234,6.66
+Koregaon Park Hub,out_of_stock,Afternoon (12-5),180,5.13
+Koregaon Park Hub,no_rider_available,Night (10-6),84,2.39
+Koregaon Park Hub,consumer_unavailable,Night (10-6),65,1.85
+Koregaon Park Hub,out_of_stock,Night (10-6),46,1.31
+Kothrud Hub,no_rider_available,Evening (5-10),454,16.03
+Kothrud Hub,no_rider_available,Morning (6-12),409,14.44
+Kothrud Hub,consumer_unavailable,Evening (5-10),375,13.24
+Kothrud Hub,consumer_unavailable,Morning (6-12),348,12.28
+Kothrud Hub,out_of_stock,Evening (5-10),277,9.78
+Kothrud Hub,out_of_stock,Morning (6-12),259,9.14
+Kothrud Hub,no_rider_available,Afternoon (12-5),216,7.62
+Kothrud Hub,consumer_unavailable,Afternoon (12-5),195,6.88
+Kothrud Hub,out_of_stock,Afternoon (12-5),130,4.59
+Kothrud Hub,no_rider_available,Night (10-6),83,2.93
+Kothrud Hub,consumer_unavailable,Night (10-6),51,1.8
+Kothrud Hub,out_of_stock,Night (10-6),36,1.27
+Magarpatta Hub,no_rider_available,Evening (5-10),505,15.94
+Magarpatta Hub,no_rider_available,Morning (6-12),433,13.67
+Magarpatta Hub,consumer_unavailable,Evening (5-10),407,12.85
+Magarpatta Hub,consumer_unavailable,Morning (6-12),376,11.87
+Magarpatta Hub,out_of_stock,Evening (5-10),330,10.42
+Magarpatta Hub,out_of_stock,Morning (6-12),280,8.84
+Magarpatta Hub,no_rider_available,Afternoon (12-5),271,8.55
+Magarpatta Hub,consumer_unavailable,Afternoon (12-5),225,7.1
+Magarpatta Hub,out_of_stock,Afternoon (12-5),151,4.77
+Magarpatta Hub,no_rider_available,Night (10-6),71,2.24
+Magarpatta Hub,consumer_unavailable,Night (10-6),64,2.02
+Magarpatta Hub,out_of_stock,Night (10-6),55,1.74
+Pimpri Hub,no_rider_available,Evening (5-10),435,16.69
+Pimpri Hub,no_rider_available,Morning (6-12),357,13.7
+Pimpri Hub,consumer_unavailable,Evening (5-10),354,13.58
+Pimpri Hub,consumer_unavailable,Morning (6-12),302,11.59
+Pimpri Hub,out_of_stock,Evening (5-10),246,9.44
+Pimpri Hub,no_rider_available,Afternoon (12-5),227,8.71
+Pimpri Hub,out_of_stock,Morning (6-12),207,7.94
+Pimpri Hub,consumer_unavailable,Afternoon (12-5),181,6.95
+Pimpri Hub,out_of_stock,Afternoon (12-5),119,4.57
+Pimpri Hub,no_rider_available,Night (10-6),69,2.65
+Pimpri Hub,consumer_unavailable,Night (10-6),69,2.65
+Pimpri Hub,out_of_stock,Night (10-6),40,1.53
+Shivajinagar Hub,no_rider_available,Evening (5-10),479,16.7
+Shivajinagar Hub,no_rider_available,Morning (6-12),375,13.08
+Shivajinagar Hub,consumer_unavailable,Evening (5-10),373,13.01
+Shivajinagar Hub,consumer_unavailable,Morning (6-12),341,11.89
+Shivajinagar Hub,out_of_stock,Evening (5-10),290,10.11
+Shivajinagar Hub,out_of_stock,Morning (6-12),260,9.07
+Shivajinagar Hub,no_rider_available,Afternoon (12-5),237,8.26
+Shivajinagar Hub,consumer_unavailable,Afternoon (12-5),206,7.18
+Shivajinagar Hub,out_of_stock,Afternoon (12-5),125,4.36
+Shivajinagar Hub,no_rider_available,Night (10-6),79,2.75
+Shivajinagar Hub,consumer_unavailable,Night (10-6),66,2.3
+Shivajinagar Hub,out_of_stock,Night (10-6),37,1.29
+Undri Hub,no_rider_available,Evening (5-10),359,17.19
+Undri Hub,no_rider_available,Morning (6-12),297,14.22
+Undri Hub,consumer_unavailable,Evening (5-10),287,13.75
+Undri Hub,consumer_unavailable,Morning (6-12),258,12.36
+Undri Hub,out_of_stock,Evening (5-10),205,9.82
+Undri Hub,out_of_stock,Morning (6-12),182,8.72
+Undri Hub,no_rider_available,Afternoon (12-5),140,6.7
+Undri Hub,consumer_unavailable,Afternoon (12-5),135,6.47
+Undri Hub,out_of_stock,Afternoon (12-5),107,5.12
+Undri Hub,no_rider_available,Night (10-6),50,2.39
+Undri Hub,consumer_unavailable,Night (10-6),37,1.77
+Undri Hub,out_of_stock,Night (10-6),31,1.48
+Viman Nagar Hub,no_rider_available,Evening (5-10),554,15.26
+Viman Nagar Hub,consumer_unavailable,Evening (5-10),545,15.01
+Viman Nagar Hub,no_rider_available,Morning (6-12),493,13.58
+Viman Nagar Hub,consumer_unavailable,Morning (6-12),418,11.51
+Viman Nagar Hub,out_of_stock,Evening (5-10),357,9.83
+Viman Nagar Hub,out_of_stock,Morning (6-12),301,8.29
+Viman Nagar Hub,consumer_unavailable,Afternoon (12-5),291,8.01
+Viman Nagar Hub,no_rider_available,Afternoon (12-5),279,7.68
+Viman Nagar Hub,out_of_stock,Afternoon (12-5),176,4.85
+Viman Nagar Hub,out_of_stock,Night (10-6),77,2.12
+Viman Nagar Hub,no_rider_available,Night (10-6),77,2.12
+Viman Nagar Hub,consumer_unavailable,Night (10-6),63,1.74
+Wakad Hub,no_rider_available,Evening (5-10),351,15.66
+Wakad Hub,consumer_unavailable,Evening (5-10),332,14.81
+Wakad Hub,no_rider_available,Morning (6-12),296,13.21
+Wakad Hub,consumer_unavailable,Morning (6-12),238,10.62
+Wakad Hub,out_of_stock,Evening (5-10),223,9.95
+Wakad Hub,out_of_stock,Morning (6-12),212,9.46
+Wakad Hub,no_rider_available,Afternoon (12-5),196,8.75
+Wakad Hub,consumer_unavailable,Afternoon (12-5),164,7.32
+Wakad Hub,out_of_stock,Afternoon (12-5),102,4.55
+Wakad Hub,no_rider_available,Night (10-6),49,2.19
+Wakad Hub,consumer_unavailable,Night (10-6),44,1.96
+Wakad Hub,out_of_stock,Night (10-6),34,1.52
+Warje Hub,consumer_unavailable,Evening (5-10),382,14.87
+Warje Hub,no_rider_available,Evening (5-10),370,14.4
+Warje Hub,no_rider_available,Morning (6-12),365,14.21
+Warje Hub,consumer_unavailable,Morning (6-12),312,12.14
+Warje Hub,out_of_stock,Evening (5-10),268,10.43
+Warje Hub,no_rider_available,Afternoon (12-5),218,8.49
+Warje Hub,out_of_stock,Morning (6-12),212,8.25
+Warje Hub,consumer_unavailable,Afternoon (12-5),153,5.96
+Warje Hub,out_of_stock,Afternoon (12-5),141,5.49
+Warje Hub,consumer_unavailable,Night (10-6),62,2.41
+Warje Hub,no_rider_available,Night (10-6),58,2.26
+Warje Hub,out_of_stock,Night (10-6),28,1.09
