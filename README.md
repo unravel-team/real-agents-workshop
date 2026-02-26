@@ -32,28 +32,27 @@ You’ll leave with a concrete engineering workflow (an “agent improvement loo
     - (Recommended) An API key for any supported LLM provider (OpenAI/Anthropic/etc.)
     - Langfuse (for observability) - [Cloud setup](https://langfuse.com/docs/get-started) or [Local Docker setup](https://langfuse.com/docs/deployment/local)
 
-## Workshop Outline (3 hours)
+## Workshop Outline (~2 h 15 min)
 
-1.  **[Anatomy of a production agent](./01-anatomy/) (15 min)**
-    Agent loop, tool contracts, ground-truth checks, stop conditions, failure modes.
+1.  **[Anatomy of a Production Agent](./01-anatomy/) (30 min)**
+    Agent loop, DSPy signatures & modules, Predict, Chain of Thought, ReAct with tool use.
 
-2.  **[Build the agent in DSPy](./02-build/) (60 min)**
-    Signatures + modules, tool wiring, structured outputs, error handling.
+2.  **[Build & Optimise a Text-to-SQL Agent](./02-build-and-optimize/)**
 
-3.  **[Observability & evals](./03-observability/) (45 min)**
-    Tracing, failure buckets, creating an eval set from real-ish cases, measuring baseline.
+    a. **Build** (30 min) — DuckDB + `execute_sql` tool, ReAct agent, marker agent.
 
-4.  **[Optimisation](./04-optimisation/) (45 min)**
-    Few-shot baselines → DSPy optimiser run → compare metrics + inspect deltas.
+    b. **Evaluate** (45 min) — 4 metrics (tool efficiency, SQL validity, error recovery, answer quality), run evals, add custom evals, debugging.
 
-5.  **[Shipping the improvement loop](./05-shipping/) (15 min)**
-    Minimal CI pattern: run evals on PR, regressions gate merges, version prompts/programs.
+    c. **Optimise** (30 min) — Agent V2 (DB context injection), GEPA optimiser, compare results.
 
 ## Repo Setup
 
-- Python **3.11+**
-- [`uv`](https://docs.astral.sh/uv/)
-- Git
+- [Python **3.11+**](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/install/)
+- [`uv`](https://docs.astral.sh/uv/getting-started/installation/) — fast Python package manager
+- [DuckDB CLI](https://duckdb.org/install/?environment=cli) — local analytical database
+- **LLM API key** (one of): [OpenRouter](https://openrouter.ai/settings/keys) (recommended), OpenAI, Anthropic, or Gemini
+- **Langfuse** (optional, for observability): [Cloud setup](https://langfuse.com/docs/observability/get-started) or [Local Docker](https://langfuse.com/docs/deployment/local)
 
 ### Validate Your Setup
 
