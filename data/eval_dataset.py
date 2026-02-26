@@ -1,0 +1,162 @@
+from pathlib import Path
+
+DATASET = [
+    # --- Easy ---
+    {
+        "id": "1_product_count",
+        "question": "How many products are in the catalogue?",
+        "expected_tables": ["product_catalogue"],
+        "expected_answer": Path("eval_answer_csvs/1_product_count.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/1_product_count.sql").read_text(),
+        "difficulty": "easy",
+        "impossible": False,
+    },
+    {
+        "id": "2_unique_categories",
+        "question": "List all unique product categories",
+        "expected_tables": ["product_catalogue"],
+        "expected_answer": Path("eval_answer_csvs/2_unique_categories.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/2_unique_categories.sql").read_text(),
+        "difficulty": "easy",
+        "impossible": False,
+    },
+    {
+        "id": "3_store_count",
+        "question": "How many stores are there?",
+        "expected_tables": ["stores"],
+        "expected_answer": Path("eval_answer_csvs/3_store_count.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/3_store_count.sql").read_text(),
+        "difficulty": "easy",
+        "impossible": False,
+    },
+    {
+        "id": "4_avg_age_by_gender",
+        "question": "What is the average age of consumers by gender?",
+        "expected_tables": ["consumers"],
+        "expected_answer": Path("eval_answer_csvs/4_avg_age_by_gender.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/4_avg_age_by_gender.sql").read_text(),
+        "difficulty": "easy",
+        "impossible": False,
+    },
+    {
+        "id": "5_orders_by_status",
+        "question": "How many orders were cancelled vs delivered?",
+        "expected_tables": ["itemized_orders"],
+        "expected_answer": Path("eval_answer_csvs/5_orders_by_status.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/5_orders_by_status.sql").read_text(),
+        "difficulty": "easy",
+        "impossible": False,
+    },
+    {
+        "id": "6_top_store_delivered",
+        "question": "Which store has the most delivered orders?",
+        "expected_tables": ["itemized_orders", "stores"],
+        "expected_answer": Path("eval_answer_csvs/6_top_store_delivered.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/6_top_store_delivered.sql").read_text(),
+        "difficulty": "easy",
+        "impossible": False,
+    },
+    # --- Medium ---
+    {
+        "id": "7_store_performance_scorecard",
+        "question": "Give me a monthly scorecard for each store — revenue, orders, cancellation rate, avg delivery time, and SLA breach rate.",
+        "expected_tables": ["itemized_orders", "stores"],
+        "expected_answer": Path("eval_answer_csvs/7_store_scorecard.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/7_store_scorecard.sql").read_text(),
+        "difficulty": "medium",
+        "impossible": False,
+    },
+    {
+        "id": "8_demand_hour_dayofweek",
+        "question": "Show me the hourly demand pattern by day of week for each store — where are the peaks and troughs?",
+        "expected_tables": ["itemized_orders", "stores"],
+        "expected_answer": Path(
+            "eval_answer_csvs/8_demand_hour_dayofweek.csv"
+        ).read_text(),
+        "reference_sql": Path(
+            "eval_answer_sqls/8_demand_hour_dayofweek.sql"
+        ).read_text(),
+        "difficulty": "medium",
+        "impossible": False,
+    },
+    # --- Hard ---
+    {
+        "id": "9_user_retention",
+        "question": "I want to see our cohort retention at a glance. Group customers by the month they first ordered, then show me what % were still active in Month 1, Month 2, Month 3. Pivot it so each cohort is one row — don't make me scroll through repeated dates.",
+        "expected_tables": ["itemized_orders"],
+        "expected_answer": Path("eval_answer_csvs/9_user_retention.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/9_user_retention.sql").read_text(),
+        "difficulty": "hard",
+        "impossible": False,
+    },
+    {
+        "id": "10_basket_affinity",
+        "question": "Which sub-categories are most frequently bought together? Show me the top 25 co-occurrence pairs to inform bundling strategy.",
+        "expected_tables": ["itemized_orders", "product_catalogue"],
+        "expected_answer": Path("eval_answer_csvs/10_basket_affinity.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/10_basket_affinity.sql").read_text(),
+        "difficulty": "hard",
+        "impossible": False,
+    },
+    {
+        "id": "11_high_value_churned",
+        "question": "Identify consumers who spent ≥ ₹5000 in Nov–Dec 2025 but have had zero orders in Feb 2026 — these are high-value churn risks.",
+        "expected_tables": ["itemized_orders", "stores", "consumers"],
+        "expected_answer": Path(
+            "eval_answer_csvs/11_high_value_churned.csv"
+        ).read_text(),
+        "reference_sql": Path("eval_answer_sqls/11_high_value_churned.sql").read_text(),
+        "difficulty": "hard",
+        "impossible": False,
+    },
+    {
+        "id": "12_cancellation_rca",
+        "question": "Break down cancellations by reason, store, and time-of-day buckets (6 am - 12 pm, 12 pm - 6 pm, 5 pm - 10 pm, 10 pm - 6 am) — are certain stores or hours disproportionately driving cancellations?",
+        "expected_tables": ["itemized_orders", "stores"],
+        "expected_answer": Path("eval_answer_csvs/12_cancellation_rca.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/12_cancellation_rca.sql").read_text(),
+        "difficulty": "hard",
+        "impossible": False,
+    },
+    {
+        "id": "13_4week_moving_avg",
+        "question": "Show me weekly revenue with a 4-week moving average per store so I can see the trend and separate signal from noise.",
+        "expected_tables": ["itemized_orders", "stores"],
+        "expected_answer": Path("eval_answer_csvs/13_4week_moving_avg.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/13_4week_moving_avg.sql").read_text(),
+        "difficulty": "hard",
+        "impossible": False,
+    },
+    {
+        "id": "14_delivery_distance_sla_breach",
+        "question": "Is delivery distance a primary driver of SLA breaches? Show me breach rates bucketed by distance (0-1km, 1-2km, 2-3km, 3-4km, 4+km)",
+        "expected_tables": ["itemized_orders", "stores"],
+        "expected_answer": Path(
+            "eval_answer_csvs/14_delivery_distance_sla_breach.csv"
+        ).read_text(),
+        "reference_sql": Path(
+            "eval_answer_sqls/14_delivery_distance_sla_breach.sql"
+        ).read_text(),
+        "difficulty": "hard",
+        "impossible": False,
+    },
+    # --- Impossible (error recovery) ---
+    {
+        "id": "15_impossible_salary",
+        "question": "What is the average salary of employees?",
+        "expected_tables": [],
+        "expected_answer": Path("eval_answer_csvs/15_impossible_salary.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/15_impossible_salary.sql").read_text(),
+        "difficulty": "impossible",
+        "impossible": True,
+    },
+    {
+        "id": "16_impossible_weather",
+        "question": "Show me the weather forecast for Pune",
+        "expected_tables": [],
+        "expected_answer": Path("eval_answer_csvs/16_impossible_weather.csv").read_text(),
+        "reference_sql": Path("eval_answer_sqls/16_impossible_weather.sql").read_text(),
+        "difficulty": "impossible",
+        "impossible": True,
+    },
+]
