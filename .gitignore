@@ -2,7 +2,7 @@
 .env
 
 # Downloaded data
-data/
+*.duckdb
 
 #Mac Folder
 *.DS_Store
